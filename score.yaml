@@ -20,6 +20,8 @@ resources:
     type: dns
   route:
     type: route
+  cache:
+    type: redis
     params:
       host: ${resources.dns.host}
       path: /
