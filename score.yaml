@@ -18,11 +18,11 @@ containers:
 resources:
   dns: # We need a DNS record to point to the service
     type: dns
-  route:
-    type: route
   cache:
     type: redis
-  params:
-    host: ${resources.dns.host}
-    path: /
-    port: 80
+  route:
+    type: route
+    params:
+      host: ${resources.dns.host}
+      path: /
+      port: 80
