@@ -17,11 +17,11 @@ containers:
 
 resources:
   dns: # We need a DNS record to point to the service 
-    type: dns
-  route:
-    type: route
+    type: DNS
   cache:
     type: redis
+  route:
+    type: route
     params:
       host: ${resources.dns.host}
       path: /
