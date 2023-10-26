@@ -20,9 +20,9 @@ resources:
     type: dns
   route:
     type: route
-  cache:
+    params:
+      host: ${resources.dns.host}
+      path: /
+      port: 80
+   cache:
     type: redis
-  params:
-    host: ${resources.dns.host}
-    path: /
-    port: 80
