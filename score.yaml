@@ -22,7 +22,7 @@ resources:
     type: route
   cache:
     type: redis
-    params:
-      host: ${resources.dns.host}
-      path: /
-      port: 80
+  params:
+    host: ${resources.dns.host}
+    path: /
+    port: 80
